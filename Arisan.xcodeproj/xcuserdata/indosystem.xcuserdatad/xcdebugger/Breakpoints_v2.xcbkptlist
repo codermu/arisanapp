@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Arisan/HomeViewController.swift"
+            timestampString = "499856170.358085"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Arisan.HomeViewController.__deallocating_deinit"
+                  moduleName = "Arisan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/indosystem/Documents/Arisan/Arisan/HomeViewController.swift"
+                  timestampString = "499856170.409873"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Arisan.HomeViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Arisan.HomeViewController"
+                  moduleName = "Arisan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/indosystem/Documents/Arisan/Arisan/HomeViewController.swift"
+                  timestampString = "499856170.478406"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "107">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Arisan.HomeViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Arisan.HomeViewController"
+                  moduleName = "Arisan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/indosystem/Documents/Arisan/Arisan/HomeViewController.swift"
+                  timestampString = "499856170.482087"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Arisan.HomeViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Arisan.HomeViewController&gt;"
+                  moduleName = "Arisan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/indosystem/Documents/Arisan/Arisan/HomeViewController.swift"
+                  timestampString = "499856170.484626"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Arisan.HomeViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Arisan.HomeViewController&gt;"
+                  moduleName = "Arisan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/indosystem/Documents/Arisan/Arisan/HomeViewController.swift"
+                  timestampString = "499856170.486792"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "105">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
