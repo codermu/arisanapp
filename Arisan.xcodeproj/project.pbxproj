@@ -10,6 +10,8 @@
 		2A59D1991DCAF48D0057EB5C /* TransparentTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59D1981DCAF48D0057EB5C /* TransparentTextField.swift */; };
 		2A59D19B1DCB228B0057EB5C /* TopMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59D19A1DCB228B0057EB5C /* TopMenuBar.swift */; };
 		2A59D19E1DCB23920057EB5C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59D19D1DCB23920057EB5C /* HomeViewController.swift */; };
+		2A59D1A01DCB43570057EB5C /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59D19F1DCB43570057EB5C /* MenuCell.swift */; };
+		2A59D1A21DCB43700057EB5C /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59D1A11DCB43700057EB5C /* BaseCell.swift */; };
 		2A9612B21DCADB13009A7557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9612B11DCADB13009A7557 /* AppDelegate.swift */; };
 		2A9612B41DCADB13009A7557 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9612B31DCADB13009A7557 /* ViewController.swift */; };
 		2A9612B71DCADB13009A7557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A9612B51DCADB13009A7557 /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 		2A59D1981DCAF48D0057EB5C /* TransparentTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentTextField.swift; sourceTree = "<group>"; };
 		2A59D19A1DCB228B0057EB5C /* TopMenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuBar.swift; sourceTree = "<group>"; };
 		2A59D19D1DCB23920057EB5C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2A59D19F1DCB43570057EB5C /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		2A59D1A11DCB43700057EB5C /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		2A9612AE1DCADB13009A7557 /* Arisan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arisan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9612B11DCADB13009A7557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A9612B31DCADB13009A7557 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				2A59D19A1DCB228B0057EB5C /* TopMenuBar.swift */,
+				2A59D19F1DCB43570057EB5C /* MenuCell.swift */,
+				2A59D1A11DCB43700057EB5C /* BaseCell.swift */,
 				2A59D1981DCAF48D0057EB5C /* TransparentTextField.swift */,
 			);
 			name = View;
@@ -295,9 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A59D1A01DCB43570057EB5C /* MenuCell.swift in Sources */,
 				2A59D19B1DCB228B0057EB5C /* TopMenuBar.swift in Sources */,
 				2A59D1991DCAF48D0057EB5C /* TransparentTextField.swift in Sources */,
 				2A9612E51DCAEC3B009A7557 /* RegisterViewController.swift in Sources */,
+				2A59D1A21DCB43700057EB5C /* BaseCell.swift in Sources */,
 				2A9612B41DCADB13009A7557 /* ViewController.swift in Sources */,
 				2A9612B21DCADB13009A7557 /* AppDelegate.swift in Sources */,
 				2A59D19E1DCB23920057EB5C /* HomeViewController.swift in Sources */,

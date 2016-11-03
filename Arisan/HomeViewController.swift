@@ -27,6 +27,7 @@ class HomeViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         self.navigationController?.isNavigationBarHidden = false
+        self.navigationItem.setHidesBackButton(true, animated: false)
         setupTopMenuBar()
         
         navigationController?.navigationBar.isTranslucent = false
