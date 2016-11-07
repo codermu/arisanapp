@@ -8,19 +8,15 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
 
-    let topMenuBar : TopMenuBar = {
+    lazy var topMenuBar : TopMenuBar = {
         let tmb = TopMenuBar()
+        tmb.homeController = self
         return tmb
     }()
     
-    private func setupTopMenuBar(){
-        view.addSubview(topMenuBar)
-        view.addConstraintsWithFormat(format: "H:|[v0]|", views: topMenuBar)
-        view.addConstraintsWithFormat(format: "V:|[v0(50)]", views: topMenuBar)
-        
-    }
+    let cellId = "cellId"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,16 +25,80 @@ class HomeViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = false
         self.navigationItem.setHidesBackButton(true, animated: false)
         setupTopMenuBar()
+        setupCollectionView()
         
         navigationController?.navigationBar.isTranslucent = false
     }
 
+    
+    private func setupTopMenuBar(){
+        view.addSubview(topMenuBar)
+        view.addConstraintsWithFormat(format: "H:|[v0]|", views: topMenuBar)
+        view.addConstraintsWithFormat(format: "V:|[v0(50)]", views: topMenuBar)
+        
+    }
+    
+    
+    func setupCollectionView() {
+        if let flowLayout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.scrollDirection = .horizontal
+            flowLayout.minimumLineSpacing = 0
+        }
+        
+        collectionView?.backgroundColor = UIColor.white
+        
+        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
+        
+        collectionView?.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
+        collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(50, 0, 0, 0)
+        
+        collectionView?.isPagingEnabled = true
+    }
+    
+    func scrollToMenuIndex(menuIndex: Int) {
+        let indexPath = NSIndexPath(item: menuIndex, section: 0)
+        collectionView?.scrollToItem(at: indexPath as IndexPath, at: [], animated: true)
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        topMenuBar.horizontalBarLeftAnchorConstraint?.constant = scrollView.contentOffset.x / 3
+    }
+    
+    override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let index = targetContentOffset.pointee.x / view.frame.width
+        
+        topMenuBar.menuCellSelect(item: Int(index), section: 0)
+        
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of items
+        return 3
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+        
+        // Configure the cell
+        
+        let colors: [UIColor] = [.blue, .red, .yellow]
+        
+        cell.backgroundColor = colors[indexPath.item]
+        
+        return cell
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width : view.frame.width, height : view.frame.height)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 

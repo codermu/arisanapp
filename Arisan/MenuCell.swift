@@ -10,23 +10,23 @@ import UIKit
 
 class MenuCell: BaseCell {
     
-    let menu: UIButton = {
-        let lbl = UIButton()
-        lbl.backgroundColor = UIColor.clear
+    let menu: UILabel = {
+        let lbl = UILabel()
+        lbl.textColor       = UIColor.white.withAlphaComponent(0.4)
+        lbl.textAlignment   = NSTextAlignment.center
+        lbl.font = lbl.font.withSize(14.0)
         return lbl
     }()
     
     override var isHighlighted: Bool {
         didSet {
-            let textColor = isHighlighted ? UIColor.white : UIColor.init(red: 91, green: 14, blue: 13, alpha: 100)
-            menu.setTitleColor(textColor, for: .normal)
+            menu.textColor = isHighlighted ? UIColor.white : UIColor.white.withAlphaComponent(0.4)
         }
     }
     
     override var isSelected: Bool {
         didSet {
-            let textColor = isHighlighted ? UIColor.white : UIColor.init(red: 91, green: 14, blue: 13, alpha: 100)
-            menu.setTitleColor(textColor, for: .normal)
+            menu.textColor = isHighlighted ? UIColor.white : UIColor.white.withAlphaComponent(0.4)
         }
     }
     

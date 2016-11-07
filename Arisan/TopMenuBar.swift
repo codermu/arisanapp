@@ -12,6 +12,7 @@ class TopMenuBar : UIView, UICollectionViewDataSource, UICollectionViewDelegate,
     
     let cellId = "TopMenuBarCell"
     let menuList = ["INVITATION","LETS SHAKE","GROUP"]
+    var homeController: HomeViewController?
     
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -25,15 +26,43 @@ class TopMenuBar : UIView, UICollectionViewDataSource, UICollectionViewDelegate,
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        
         collectionView.register(MenuCell.self, forCellWithReuseIdentifier: cellId)
         
         addSubview(collectionView)
         addConstraintsWithFormat(format: "H:|[v0]|", views: collectionView)
         addConstraintsWithFormat(format: "V:|[v0]|", views: collectionView)
         
-        //let selectedIndexPath = NSIndexPath(forItem: 0, inSection: 0)
-        //collectionView.selectItemAtIndexPath(selectedIndexPath, animated: false, scrollPosition: .None)
+        setupHorizontalBar()
+    }
+    
+    func menuCellSelect(item : Int, section : Int){
+        
+        let selectedIndexPath = IndexPath(item: item, section: section)
+        
+        collectionView.selectItem(at: selectedIndexPath as IndexPath, animated: false, scrollPosition: [])
+        
+        let cell = collectionView.cellForItem(at: selectedIndexPath) as! MenuCell
+        cell.menu.textColor = UIColor.white
+    }
+    
+    var horizontalBarLeftAnchorConstraint: NSLayoutConstraint?
+    
+    func setupHorizontalBar() {
+        let horizontalBarView = UIView()
+        horizontalBarView.backgroundColor = UIColor(white: 0.95, alpha: 1)
+        horizontalBarView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(horizontalBarView)
+
+        //new school way of laying out our views
+        //in ios9
+        //need x, y, width, height constraints
+        
+        horizontalBarLeftAnchorConstraint = horizontalBarView.leftAnchor.constraint(equalTo: self.leftAnchor)
+        horizontalBarLeftAnchorConstraint?.isActive = true
+        
+        horizontalBarView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        horizontalBarView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1/3).isActive = true
+        horizontalBarView.heightAnchor.constraint(equalToConstant: 4).isActive = true
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -43,10 +72,13 @@ class TopMenuBar : UIView, UICollectionViewDataSource, UICollectionViewDelegate,
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath as IndexPath) as! MenuCell
         
-        cell.menu.setTitle(menuList[indexPath.item], for: .normal)
-        
-        cell.tintColor = UIColor.init(red: 91, green: 14, blue: 13, alpha: 100)
-        
+        cell.menu.text = menuList[indexPath.item]
+        if( indexPath.item == 0 ){
+            collectionView.selectItem(at: indexPath, animated: false, scrollPosition: [])
+            cell.menu.textColor = UIColor.white
+        }else{
+            cell.menu.textColor = UIColor.white.withAlphaComponent(0.4)
+        }
         return cell
     }
     
@@ -57,6 +89,14 @@ class TopMenuBar : UIView, UICollectionViewDataSource, UICollectionViewDelegate,
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! MenuCell
+        cell.menu.textColor = UIColor.white
+        
+        homeController?.scrollToMenuIndex(menuIndex: indexPath.item)
+    
     }
     
     required init?(coder aDecoder: NSCoder) {

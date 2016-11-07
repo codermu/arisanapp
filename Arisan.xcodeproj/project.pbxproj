@@ -22,6 +22,7 @@
 		2A9612E11DCAE246009A7557 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9612E01DCAE246009A7557 /* Roboto-Regular.ttf */; };
 		2A9612E31DCAE2C3009A7557 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9612E21DCAE2C3009A7557 /* Billabong.ttf */; };
 		2A9612E51DCAEC3B009A7557 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9612E41DCAEC3B009A7557 /* RegisterViewController.swift */; };
+		2AC0DA4D1DCC84950093FD7A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC0DA4C1DCC84950093FD7A /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		2A9612E01DCAE246009A7557 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		2A9612E21DCAE2C3009A7557 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Billabong.ttf; sourceTree = "<group>"; };
 		2A9612E41DCAEC3B009A7557 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2AC0DA4C1DCC84950093FD7A /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				2A9612B31DCADB13009A7557 /* ViewController.swift */,
 				2A9612B51DCADB13009A7557 /* Main.storyboard */,
 				2A59D19D1DCB23920057EB5C /* HomeViewController.swift */,
+				2AC0DA4C1DCC84950093FD7A /* CollectionViewController.swift */,
 				2A9612E41DCAEC3B009A7557 /* RegisterViewController.swift */,
 				2A9612B81DCADB13009A7557 /* Assets.xcassets */,
 				2A9612BA1DCADB13009A7557 /* LaunchScreen.storyboard */,
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC0DA4D1DCC84950093FD7A /* CollectionViewController.swift in Sources */,
 				2A59D1A01DCB43570057EB5C /* MenuCell.swift in Sources */,
 				2A59D19B1DCB228B0057EB5C /* TopMenuBar.swift in Sources */,
 				2A59D1991DCAF48D0057EB5C /* TransparentTextField.swift in Sources */,
