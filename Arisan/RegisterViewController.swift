@@ -7,12 +7,40 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RegisterViewController: UIViewController {
 
+    
+    @IBOutlet weak var userNameInput: TransparentTextField!
+    @IBOutlet weak var emailAddressInput: TransparentTextField!
+    @IBOutlet weak var passwordInput: TransparentTextField!
+    @IBOutlet weak var confirmPasswordInput: TransparentTextField!
+    
+    
+    @IBAction func signUp_tap(_ sender: AnyObject) {
+        
+        
+        
+    }
+    
+    func register(userName:String,emailAddress:String,password:String) {
+        
+        FIRAuth.auth()?.createUser(withEmail: emailAddress, password: password, completion: {
+            users, error in
+            
+            
+            
+        })
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        
         self.navigationController?.isNavigationBarHidden = false
     }
 
@@ -23,7 +51,6 @@ class RegisterViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
-        
     }
     
 

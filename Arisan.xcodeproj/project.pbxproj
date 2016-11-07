@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1B5B391DD031BF000CC697 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A1B5B381DD031BF000CC697 /* GoogleService-Info.plist */; };
+		2A1B5B3B1DD040F8000CC697 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B5B3A1DD040F8000CC697 /* Auth.swift */; };
 		2A59D1991DCAF48D0057EB5C /* TransparentTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59D1981DCAF48D0057EB5C /* TransparentTextField.swift */; };
 		2A59D19B1DCB228B0057EB5C /* TopMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59D19A1DCB228B0057EB5C /* TopMenuBar.swift */; };
 		2A59D19E1DCB23920057EB5C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59D19D1DCB23920057EB5C /* HomeViewController.swift */; };
 		2A59D1A01DCB43570057EB5C /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59D19F1DCB43570057EB5C /* MenuCell.swift */; };
 		2A59D1A21DCB43700057EB5C /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59D1A11DCB43700057EB5C /* BaseCell.swift */; };
 		2A9612B21DCADB13009A7557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9612B11DCADB13009A7557 /* AppDelegate.swift */; };
-		2A9612B41DCADB13009A7557 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9612B31DCADB13009A7557 /* ViewController.swift */; };
+		2A9612B41DCADB13009A7557 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9612B31DCADB13009A7557 /* LoginController.swift */; };
 		2A9612B71DCADB13009A7557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A9612B51DCADB13009A7557 /* Main.storyboard */; };
 		2A9612B91DCADB13009A7557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A9612B81DCADB13009A7557 /* Assets.xcassets */; };
 		2A9612BC1DCADB13009A7557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A9612BA1DCADB13009A7557 /* LaunchScreen.storyboard */; };
@@ -23,6 +25,9 @@
 		2A9612E31DCAE2C3009A7557 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9612E21DCAE2C3009A7557 /* Billabong.ttf */; };
 		2A9612E51DCAEC3B009A7557 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9612E41DCAEC3B009A7557 /* RegisterViewController.swift */; };
 		2AC0DA4D1DCC84950093FD7A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC0DA4C1DCC84950093FD7A /* CollectionViewController.swift */; };
+		89051B41145C0AEE4C0A15EE /* Pods_ArisanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D9B85301248040DFAD69D8 /* Pods_ArisanUITests.framework */; };
+		8917282601D4C8378527D1D5 /* Pods_ArisanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650834434BD6109CCF3F4825 /* Pods_ArisanTests.framework */; };
+		E01AAD74CAA7D29203E2D935 /* Pods_Arisan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DE32AEB604A53518D757E3 /* Pods_Arisan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BA537137009143E78034091 /* Pods-Arisan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arisan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Arisan/Pods-Arisan.release.xcconfig"; sourceTree = "<group>"; };
+		2A1B5B381DD031BF000CC697 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2A1B5B3A1DD040F8000CC697 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		2A59D1981DCAF48D0057EB5C /* TransparentTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentTextField.swift; sourceTree = "<group>"; };
 		2A59D19A1DCB228B0057EB5C /* TopMenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuBar.swift; sourceTree = "<group>"; };
 		2A59D19D1DCB23920057EB5C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +58,7 @@
 		2A59D1A11DCB43700057EB5C /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		2A9612AE1DCADB13009A7557 /* Arisan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arisan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9612B11DCADB13009A7557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2A9612B31DCADB13009A7557 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A9612B31DCADB13009A7557 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2A9612B61DCADB13009A7557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A9612B81DCADB13009A7557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A9612BB1DCADB13009A7557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +72,16 @@
 		2A9612E01DCAE246009A7557 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		2A9612E21DCAE2C3009A7557 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Billabong.ttf; sourceTree = "<group>"; };
 		2A9612E41DCAEC3B009A7557 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2A9E96B41DD076A900A6605B /* Arisan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Arisan.entitlements; sourceTree = "<group>"; };
 		2AC0DA4C1DCC84950093FD7A /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		2D9BB2C2932170CD1334DB2A /* Pods-ArisanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArisanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArisanTests/Pods-ArisanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		50DE32AEB604A53518D757E3 /* Pods_Arisan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arisan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		650834434BD6109CCF3F4825 /* Pods_ArisanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArisanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52125E08EC185C2464EFB38 /* Pods-ArisanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArisanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArisanTests/Pods-ArisanTests.release.xcconfig"; sourceTree = "<group>"; };
+		C4786E0A424D84FB21EFCBCD /* Pods-Arisan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arisan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Arisan/Pods-Arisan.debug.xcconfig"; sourceTree = "<group>"; };
+		C9F4E6526884CFA5C8D0EF3F /* Pods-ArisanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArisanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArisanUITests/Pods-ArisanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9D9B85301248040DFAD69D8 /* Pods_ArisanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArisanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC309D42CCE98DDC84E9AEE6 /* Pods-ArisanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArisanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArisanUITests/Pods-ArisanUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01AAD74CAA7D29203E2D935 /* Pods_Arisan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8917282601D4C8378527D1D5 /* Pods_ArisanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +105,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89051B41145C0AEE4C0A15EE /* Pods_ArisanUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A1B5B3C1DD0410C000CC697 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A1B5B3A1DD040F8000CC697 /* Auth.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		2A59D19C1DCB23350057EB5C /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +138,8 @@
 				2A9612C51DCADB13009A7557 /* ArisanTests */,
 				2A9612D01DCADB13009A7557 /* ArisanUITests */,
 				2A9612AF1DCADB13009A7557 /* Products */,
+				47E20B90709886522607617C /* Pods */,
+				CEE971D8FEDE9E79014D9989 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,14 +156,17 @@
 		2A9612B01DCADB13009A7557 /* Arisan */ = {
 			isa = PBXGroup;
 			children = (
+				2A9E96B41DD076A900A6605B /* Arisan.entitlements */,
+				2A1B5B381DD031BF000CC697 /* GoogleService-Info.plist */,
 				2A59D19C1DCB23350057EB5C /* View */,
 				2A9612DF1DCAE21F009A7557 /* Assets */,
 				2A9612B11DCADB13009A7557 /* AppDelegate.swift */,
-				2A9612B31DCADB13009A7557 /* ViewController.swift */,
+				2A9612B31DCADB13009A7557 /* LoginController.swift */,
 				2A9612B51DCADB13009A7557 /* Main.storyboard */,
 				2A59D19D1DCB23920057EB5C /* HomeViewController.swift */,
 				2AC0DA4C1DCC84950093FD7A /* CollectionViewController.swift */,
 				2A9612E41DCAEC3B009A7557 /* RegisterViewController.swift */,
+				2A1B5B3C1DD0410C000CC697 /* Controller */,
 				2A9612B81DCADB13009A7557 /* Assets.xcassets */,
 				2A9612BA1DCADB13009A7557 /* LaunchScreen.storyboard */,
 				2A9612BD1DCADB13009A7557 /* Info.plist */,
@@ -168,6 +201,29 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		47E20B90709886522607617C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4786E0A424D84FB21EFCBCD /* Pods-Arisan.debug.xcconfig */,
+				1BA537137009143E78034091 /* Pods-Arisan.release.xcconfig */,
+				2D9BB2C2932170CD1334DB2A /* Pods-ArisanTests.debug.xcconfig */,
+				B52125E08EC185C2464EFB38 /* Pods-ArisanTests.release.xcconfig */,
+				C9F4E6526884CFA5C8D0EF3F /* Pods-ArisanUITests.debug.xcconfig */,
+				FC309D42CCE98DDC84E9AEE6 /* Pods-ArisanUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CEE971D8FEDE9E79014D9989 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50DE32AEB604A53518D757E3 /* Pods_Arisan.framework */,
+				650834434BD6109CCF3F4825 /* Pods_ArisanTests.framework */,
+				F9D9B85301248040DFAD69D8 /* Pods_ArisanUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,9 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A9612D61DCADB13009A7557 /* Build configuration list for PBXNativeTarget "Arisan" */;
 			buildPhases = (
+				35E6EEE1737C3FAF81B4051E /* [CP] Check Pods Manifest.lock */,
 				2A9612AA1DCADB13009A7557 /* Sources */,
 				2A9612AB1DCADB13009A7557 /* Frameworks */,
 				2A9612AC1DCADB13009A7557 /* Resources */,
+				B7D0CC3656578EFF3F383153 /* [CP] Embed Pods Frameworks */,
+				BFB019B1B878CB90EDB78B94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,9 +251,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A9612D91DCADB13009A7557 /* Build configuration list for PBXNativeTarget "ArisanTests" */;
 			buildPhases = (
+				8E2EE726E863309256B25B20 /* [CP] Check Pods Manifest.lock */,
 				2A9612BE1DCADB13009A7557 /* Sources */,
 				2A9612BF1DCADB13009A7557 /* Frameworks */,
 				2A9612C01DCADB13009A7557 /* Resources */,
+				AA1D6419241996BE4C269B44 /* [CP] Embed Pods Frameworks */,
+				AC6D48A1B50CD5A26427CA0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,9 +272,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A9612DC1DCADB13009A7557 /* Build configuration list for PBXNativeTarget "ArisanUITests" */;
 			buildPhases = (
+				6FB1DE29404DA97E245F6305 /* [CP] Check Pods Manifest.lock */,
 				2A9612C91DCADB13009A7557 /* Sources */,
 				2A9612CA1DCADB13009A7557 /* Frameworks */,
 				2A9612CB1DCADB13009A7557 /* Resources */,
+				BA7E6656D78A2D6135A7BF2F /* [CP] Embed Pods Frameworks */,
+				0B7C6CDB4447E2F8EEE91E7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,7 +301,13 @@
 				TargetAttributes = {
 					2A9612AD1DCADB13009A7557 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 648MW45XDF;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					2A9612C11DCADB13009A7557 = {
 						CreatedOnToolsVersion = 8.0;
@@ -276,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9612BC1DCADB13009A7557 /* LaunchScreen.storyboard in Resources */,
+				2A1B5B391DD031BF000CC697 /* GoogleService-Info.plist in Resources */,
 				2A9612B91DCADB13009A7557 /* Assets.xcassets in Resources */,
 				2A9612E11DCAE246009A7557 /* Roboto-Regular.ttf in Resources */,
 				2A9612E31DCAE2C3009A7557 /* Billabong.ttf in Resources */,
@@ -299,6 +371,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B7C6CDB4447E2F8EEE91E7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArisanUITests/Pods-ArisanUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35E6EEE1737C3FAF81B4051E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FB1DE29404DA97E245F6305 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E2EE726E863309256B25B20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AA1D6419241996BE4C269B44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArisanTests/Pods-ArisanTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC6D48A1B50CD5A26427CA0F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArisanTests/Pods-ArisanTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7D0CC3656578EFF3F383153 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Arisan/Pods-Arisan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA7E6656D78A2D6135A7BF2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArisanUITests/Pods-ArisanUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFB019B1B878CB90EDB78B94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Arisan/Pods-Arisan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2A9612AA1DCADB13009A7557 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -309,8 +519,9 @@
 				2A59D19B1DCB228B0057EB5C /* TopMenuBar.swift in Sources */,
 				2A59D1991DCAF48D0057EB5C /* TransparentTextField.swift in Sources */,
 				2A9612E51DCAEC3B009A7557 /* RegisterViewController.swift in Sources */,
+				2A1B5B3B1DD040F8000CC697 /* Auth.swift in Sources */,
 				2A59D1A21DCB43700057EB5C /* BaseCell.swift in Sources */,
-				2A9612B41DCADB13009A7557 /* ViewController.swift in Sources */,
+				2A9612B41DCADB13009A7557 /* LoginController.swift in Sources */,
 				2A9612B21DCADB13009A7557 /* AppDelegate.swift in Sources */,
 				2A59D19E1DCB23920057EB5C /* HomeViewController.swift in Sources */,
 			);
@@ -460,11 +671,18 @@
 		};
 		2A9612D71DCADB13009A7557 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4786E0A424D84FB21EFCBCD /* Pods-Arisan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Arisan/Arisan.entitlements;
+				DEVELOPMENT_TEAM = 648MW45XDF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Arisan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Indosystem.Arisan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.indosystem.arisan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -472,11 +690,18 @@
 		};
 		2A9612D81DCADB13009A7557 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BA537137009143E78034091 /* Pods-Arisan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Arisan/Arisan.entitlements;
+				DEVELOPMENT_TEAM = 648MW45XDF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Arisan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Indosystem.Arisan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.indosystem.arisan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -484,6 +709,7 @@
 		};
 		2A9612DA1DCADB13009A7557 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D9BB2C2932170CD1334DB2A /* Pods-ArisanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +724,7 @@
 		};
 		2A9612DB1DCADB13009A7557 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B52125E08EC185C2464EFB38 /* Pods-ArisanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +739,7 @@
 		};
 		2A9612DD1DCADB13009A7557 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9F4E6526884CFA5C8D0EF3F /* Pods-ArisanUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ArisanUITests/Info.plist;
@@ -525,6 +753,7 @@
 		};
 		2A9612DE1DCADB13009A7557 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC309D42CCE98DDC84E9AEE6 /* Pods-ArisanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ArisanUITests/Info.plist;
