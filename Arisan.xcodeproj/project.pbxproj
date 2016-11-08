@@ -25,6 +25,8 @@
 		2A9612E31DCAE2C3009A7557 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9612E21DCAE2C3009A7557 /* Billabong.ttf */; };
 		2A9612E51DCAEC3B009A7557 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9612E41DCAEC3B009A7557 /* RegisterViewController.swift */; };
 		2AC0DA4D1DCC84950093FD7A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC0DA4C1DCC84950093FD7A /* CollectionViewController.swift */; };
+		2AD4D0071DD1ACBB000E2E55 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD4D0061DD1ACBB000E2E55 /* ShareViewController.swift */; };
+		2AD4D0091DD1CBD7000E2E55 /* InstagramManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD4D0081DD1CBD7000E2E55 /* InstagramManager.swift */; };
 		89051B41145C0AEE4C0A15EE /* Pods_ArisanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D9B85301248040DFAD69D8 /* Pods_ArisanUITests.framework */; };
 		8917282601D4C8378527D1D5 /* Pods_ArisanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650834434BD6109CCF3F4825 /* Pods_ArisanTests.framework */; };
 		E01AAD74CAA7D29203E2D935 /* Pods_Arisan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DE32AEB604A53518D757E3 /* Pods_Arisan.framework */; };
@@ -74,6 +76,8 @@
 		2A9612E41DCAEC3B009A7557 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2A9E96B41DD076A900A6605B /* Arisan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Arisan.entitlements; sourceTree = "<group>"; };
 		2AC0DA4C1DCC84950093FD7A /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		2AD4D0061DD1ACBB000E2E55 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		2AD4D0081DD1CBD7000E2E55 /* InstagramManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramManager.swift; sourceTree = "<group>"; };
 		2D9BB2C2932170CD1334DB2A /* Pods-ArisanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArisanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArisanTests/Pods-ArisanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		50DE32AEB604A53518D757E3 /* Pods_Arisan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arisan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		650834434BD6109CCF3F4825 /* Pods_ArisanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArisanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +170,8 @@
 				2A59D19D1DCB23920057EB5C /* HomeViewController.swift */,
 				2AC0DA4C1DCC84950093FD7A /* CollectionViewController.swift */,
 				2A9612E41DCAEC3B009A7557 /* RegisterViewController.swift */,
+				2AD4D0061DD1ACBB000E2E55 /* ShareViewController.swift */,
+				2AD4D0081DD1CBD7000E2E55 /* InstagramManager.swift */,
 				2A1B5B3C1DD0410C000CC697 /* Controller */,
 				2A9612B81DCADB13009A7557 /* Assets.xcassets */,
 				2A9612BA1DCADB13009A7557 /* LaunchScreen.storyboard */,
@@ -515,6 +521,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AC0DA4D1DCC84950093FD7A /* CollectionViewController.swift in Sources */,
+				2AD4D0071DD1ACBB000E2E55 /* ShareViewController.swift in Sources */,
 				2A59D1A01DCB43570057EB5C /* MenuCell.swift in Sources */,
 				2A59D19B1DCB228B0057EB5C /* TopMenuBar.swift in Sources */,
 				2A59D1991DCAF48D0057EB5C /* TransparentTextField.swift in Sources */,
@@ -523,6 +530,7 @@
 				2A59D1A21DCB43700057EB5C /* BaseCell.swift in Sources */,
 				2A9612B41DCADB13009A7557 /* LoginController.swift in Sources */,
 				2A9612B21DCADB13009A7557 /* AppDelegate.swift in Sources */,
+				2AD4D0091DD1CBD7000E2E55 /* InstagramManager.swift in Sources */,
 				2A59D19E1DCB23920057EB5C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

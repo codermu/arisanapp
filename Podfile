@@ -13,6 +13,7 @@ target 'Arisan' do
 	pod 'FBSDKCoreKit'
 	pod 'FBSDKShareKit'
 	pod 'FBSDKLoginKit'
+	pod 'GoogleSignIn'
 
   target 'ArisanTests' do
     inherit! :search_paths

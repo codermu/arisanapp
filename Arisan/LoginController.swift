@@ -9,8 +9,9 @@
 import UIKit
 import FirebaseAuth
 import FBSDKLoginKit
+import GoogleSignIn
 
-class LoginController: UIViewController,FBSDKLoginButtonDelegate {
+class LoginController: UIViewController,FBSDKLoginButtonDelegate , GIDSignInUIDelegate {
     
     
     @IBOutlet weak var userNameInput: TransparentTextField!
@@ -20,11 +21,28 @@ class LoginController: UIViewController,FBSDKLoginButtonDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        setupFacebookLogin()
+        setupGoogleLogin()
+    }
+    
+    fileprivate func setupFacebookLogin(){
+        // setup facebook login
         let loginButton = FBSDKLoginButton()
         view.addSubview(loginButton)
-        loginButton.frame = CGRect(x: 16, y: view.frame.height - 100, width: view.frame.width - 32, height: 50)
+        loginButton.frame = CGRect(x: 16, y: view.frame.height - 66, width: view.frame.width - 32, height: 50)
         loginButton.delegate = self
         loginButton.readPermissions = ["email","public_profile"]
+    }
+    
+    fileprivate func setupGoogleLogin() {
+        // setup google login
+        
+        let loginButton = GIDSignInButton()
+        view.addSubview(loginButton)
+        loginButton.frame = CGRect(x: 16, y: view.frame.height - 66 - 66, width: view.frame.width - 32, height: 50)
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
     }
     
     @IBAction func login_tap(_ sender: AnyObject) {
@@ -40,6 +58,7 @@ class LoginController: UIViewController,FBSDKLoginButtonDelegate {
             }else{
                 print("logged in")
                 self.errorMessage.text = "Logged In"
+                self.performSegue(withIdentifier: "loggedIn", sender: nil)
             }
             
         })
@@ -50,6 +69,23 @@ class LoginController: UIViewController,FBSDKLoginButtonDelegate {
             self.errorMessage.text = error.localizedDescription
             return
         }
+        
+        let fbAccessToken = FBSDKAccessToken.current()
+        
+        guard (fbAccessToken?.tokenString) != nil else {
+            return
+        }
+        
+        let credential = FIRFacebookAuthProvider.credential(withAccessToken: (fbAccessToken?.tokenString)!)
+        
+        FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
+            if error != nil {
+                self.errorMessage.text = error?.localizedDescription
+            }
+            
+            print(user)
+        })
+        
         
         FBSDKGraphRequest.init(graphPath: "/me", parameters: ["fields":"id, name, email"]).start(completionHandler: {
             (connection, result , error) in
