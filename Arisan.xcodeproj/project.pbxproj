@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0EE2821DD2FF150036E3C5 /* InvitationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0EE2811DD2FF150036E3C5 /* InvitationTableView.swift */; };
+		2A0EE2841DD2FF320036E3C5 /* InvitationTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A0EE2831DD2FF320036E3C5 /* InvitationTableView.xib */; };
+		2A0EE2891DD300000036E3C5 /* InvitationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0EE2871DD300000036E3C5 /* InvitationTableViewCell.swift */; };
+		2A0EE28A1DD300000036E3C5 /* InvitationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A0EE2881DD300000036E3C5 /* InvitationTableViewCell.xib */; };
+		2A0EE28F1DD312320036E3C5 /* CircularUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0EE28E1DD312320036E3C5 /* CircularUIImageView.swift */; };
+		2A0EE2911DD3176E0036E3C5 /* InvitationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0EE2901DD3176D0036E3C5 /* InvitationCell.swift */; };
 		2A1B5B391DD031BF000CC697 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A1B5B381DD031BF000CC697 /* GoogleService-Info.plist */; };
 		2A1B5B3B1DD040F8000CC697 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B5B3A1DD040F8000CC697 /* Auth.swift */; };
 		2A59D1991DCAF48D0057EB5C /* TransparentTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59D1981DCAF48D0057EB5C /* TransparentTextField.swift */; };
@@ -51,6 +57,12 @@
 
 /* Begin PBXFileReference section */
 		1BA537137009143E78034091 /* Pods-Arisan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arisan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Arisan/Pods-Arisan.release.xcconfig"; sourceTree = "<group>"; };
+		2A0EE2811DD2FF150036E3C5 /* InvitationTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationTableView.swift; sourceTree = "<group>"; };
+		2A0EE2831DD2FF320036E3C5 /* InvitationTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvitationTableView.xib; sourceTree = "<group>"; };
+		2A0EE2871DD300000036E3C5 /* InvitationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationTableViewCell.swift; sourceTree = "<group>"; };
+		2A0EE2881DD300000036E3C5 /* InvitationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvitationTableViewCell.xib; sourceTree = "<group>"; };
+		2A0EE28E1DD312320036E3C5 /* CircularUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularUIImageView.swift; sourceTree = "<group>"; };
+		2A0EE2901DD3176D0036E3C5 /* InvitationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationCell.swift; sourceTree = "<group>"; };
 		2A1B5B381DD031BF000CC697 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2A1B5B3A1DD040F8000CC697 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		2A59D1981DCAF48D0057EB5C /* TransparentTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentTextField.swift; sourceTree = "<group>"; };
@@ -116,6 +128,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A0EE2851DD2FF390036E3C5 /* InvitationTableView */ = {
+			isa = PBXGroup;
+			children = (
+				2A0EE2811DD2FF150036E3C5 /* InvitationTableView.swift */,
+				2A0EE2831DD2FF320036E3C5 /* InvitationTableView.xib */,
+			);
+			name = InvitationTableView;
+			sourceTree = "<group>";
+		};
+		2A0EE2861DD2FFD70036E3C5 /* InvitationTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2A0EE2871DD300000036E3C5 /* InvitationTableViewCell.swift */,
+				2A0EE2881DD300000036E3C5 /* InvitationTableViewCell.xib */,
+			);
+			name = InvitationTableViewCell;
+			sourceTree = "<group>";
+		};
+		2A0EE28D1DD3120F0036E3C5 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				2A59D19A1DCB228B0057EB5C /* TopMenuBar.swift */,
+				2A59D19F1DCB43570057EB5C /* MenuCell.swift */,
+				2A59D1A11DCB43700057EB5C /* BaseCell.swift */,
+				2A59D1981DCAF48D0057EB5C /* TransparentTextField.swift */,
+				2A0EE28E1DD312320036E3C5 /* CircularUIImageView.swift */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
 		2A1B5B3C1DD0410C000CC697 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,10 +169,9 @@
 		2A59D19C1DCB23350057EB5C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2A59D19A1DCB228B0057EB5C /* TopMenuBar.swift */,
-				2A59D19F1DCB43570057EB5C /* MenuCell.swift */,
-				2A59D1A11DCB43700057EB5C /* BaseCell.swift */,
-				2A59D1981DCAF48D0057EB5C /* TransparentTextField.swift */,
+				2A0EE28D1DD3120F0036E3C5 /* common */,
+				2A0EE2851DD2FF390036E3C5 /* InvitationTableView */,
+				2A0EE2861DD2FFD70036E3C5 /* InvitationTableViewCell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -167,6 +208,7 @@
 				2A9612B11DCADB13009A7557 /* AppDelegate.swift */,
 				2A9612B31DCADB13009A7557 /* LoginController.swift */,
 				2A9612B51DCADB13009A7557 /* Main.storyboard */,
+				2A0EE2901DD3176D0036E3C5 /* InvitationCell.swift */,
 				2A59D19D1DCB23920057EB5C /* HomeViewController.swift */,
 				2AC0DA4C1DCC84950093FD7A /* CollectionViewController.swift */,
 				2A9612E41DCAEC3B009A7557 /* RegisterViewController.swift */,
@@ -356,7 +398,9 @@
 				2A1B5B391DD031BF000CC697 /* GoogleService-Info.plist in Resources */,
 				2A9612B91DCADB13009A7557 /* Assets.xcassets in Resources */,
 				2A9612E11DCAE246009A7557 /* Roboto-Regular.ttf in Resources */,
+				2A0EE28A1DD300000036E3C5 /* InvitationTableViewCell.xib in Resources */,
 				2A9612E31DCAE2C3009A7557 /* Billabong.ttf in Resources */,
+				2A0EE2841DD2FF320036E3C5 /* InvitationTableView.xib in Resources */,
 				2A9612B71DCADB13009A7557 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,15 +566,19 @@
 			files = (
 				2AC0DA4D1DCC84950093FD7A /* CollectionViewController.swift in Sources */,
 				2AD4D0071DD1ACBB000E2E55 /* ShareViewController.swift in Sources */,
+				2A0EE2891DD300000036E3C5 /* InvitationTableViewCell.swift in Sources */,
 				2A59D1A01DCB43570057EB5C /* MenuCell.swift in Sources */,
 				2A59D19B1DCB228B0057EB5C /* TopMenuBar.swift in Sources */,
 				2A59D1991DCAF48D0057EB5C /* TransparentTextField.swift in Sources */,
+				2A0EE2911DD3176E0036E3C5 /* InvitationCell.swift in Sources */,
 				2A9612E51DCAEC3B009A7557 /* RegisterViewController.swift in Sources */,
 				2A1B5B3B1DD040F8000CC697 /* Auth.swift in Sources */,
 				2A59D1A21DCB43700057EB5C /* BaseCell.swift in Sources */,
+				2A0EE2821DD2FF150036E3C5 /* InvitationTableView.swift in Sources */,
 				2A9612B41DCADB13009A7557 /* LoginController.swift in Sources */,
 				2A9612B21DCADB13009A7557 /* AppDelegate.swift in Sources */,
 				2AD4D0091DD1CBD7000E2E55 /* InstagramManager.swift in Sources */,
+				2A0EE28F1DD312320036E3C5 /* CircularUIImageView.swift in Sources */,
 				2A59D19E1DCB23920057EB5C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

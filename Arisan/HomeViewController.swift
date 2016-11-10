@@ -17,6 +17,9 @@ class HomeViewController: UICollectionViewController,UICollectionViewDelegateFlo
     }()
     
     let cellId = "cellId"
+    let invitationCellId = "invitationCellId"
+    let shakeCellId = "shakeCellId"
+    let groupCellId = "groupCellId"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,7 @@ class HomeViewController: UICollectionViewController,UICollectionViewDelegateFlo
         // Do any additional setup after loading the view.
         self.navigationController?.isNavigationBarHidden = false
         self.navigationItem.setHidesBackButton(true, animated: false)
+        
         setupTopMenuBar()
         setupCollectionView()
         
@@ -36,6 +40,7 @@ class HomeViewController: UICollectionViewController,UICollectionViewDelegateFlo
         view.addConstraintsWithFormat(format: "H:|[v0]|", views: topMenuBar)
         view.addConstraintsWithFormat(format: "V:|[v0(50)]", views: topMenuBar)
         
+        //topMenuBar.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor).isActive = true
     }
     
     
@@ -48,9 +53,12 @@ class HomeViewController: UICollectionViewController,UICollectionViewDelegateFlo
         collectionView?.backgroundColor = UIColor.white
         
         collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView?.register(InvitationCell.self, forCellWithReuseIdentifier: invitationCellId)
         
-        collectionView?.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
-        collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(50, 0, 0, 0)
+        collectionView?.contentInset = UIEdgeInsetsMake(100, 0, 0, 0)
+        collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(100, 0, 0, 0)
+        
+        collectionView?.showsHorizontalScrollIndicator = false
         
         collectionView?.isPagingEnabled = true
     }
@@ -78,15 +86,14 @@ class HomeViewController: UICollectionViewController,UICollectionViewDelegateFlo
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+        if( indexPath.item == 0){
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: invitationCellId, for: indexPath)
+            return cell
+        }else{
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+            return cell
+        }
         
-        // Configure the cell
-        
-        let colors: [UIColor] = [.blue, .red, .yellow]
-        
-        cell.backgroundColor = colors[indexPath.item]
-        
-        return cell
     }
     
     

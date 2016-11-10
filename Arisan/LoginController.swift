@@ -46,7 +46,8 @@ class LoginController: UIViewController,FBSDKLoginButtonDelegate , GIDSignInUIDe
     }
     
     @IBAction func login_tap(_ sender: AnyObject) {
-        login(userName: userNameInput.text!, password: passwordInput.text!)
+        performSegue(withIdentifier: "loggedIn", sender: nil)
+        //login(userName: userNameInput.text!, password: passwordInput.text!)
     }
     
     func login(userName:String, password:String){

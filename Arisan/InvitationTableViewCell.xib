@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="invitationTableViewCell" rowHeight="114" id="KGk-i7-Jjw" customClass="InvitationTableViewCell" customModule="Arisan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="328" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFB-8u-xfn">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="z4r-Bz-hPT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite you to join arisan group “Kura-kura”" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJL-Kc-zSm">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 Member Has Joined" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2g-6s-X3D">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="141" id="DCW-KE-tVX"/>
+                            <constraint firstAttribute="height" constant="18" id="PSg-o5-hXl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-1" translatesAutoresizingMaskIntoConstraints="NO" id="zGO-3q-tjj" customClass="CircularUIImageView" customModule="Arisan" customModuleProvider="target">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="1Mn-Mx-qUI"/>
+                            <constraint firstAttribute="height" constant="25" id="hXn-mU-oxW"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-4" translatesAutoresizingMaskIntoConstraints="NO" id="z6z-ap-S8Q" customClass="CircularUIImageView" customModule="Arisan" customModuleProvider="target">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="FVa-hM-NzV"/>
+                            <constraint firstAttribute="width" constant="25" id="P2e-Qh-QKt"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-3" translatesAutoresizingMaskIntoConstraints="NO" id="eV9-zU-W0g" customClass="CircularUIImageView" customModule="Arisan" customModuleProvider="target">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="OUX-Ol-Xi1"/>
+                            <constraint firstAttribute="height" constant="25" id="a4y-hQ-lKp"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-2" translatesAutoresizingMaskIntoConstraints="NO" id="SyN-fF-gc9" customClass="CircularUIImageView" customModule="Arisan" customModuleProvider="target">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="8hT-CO-Jw3"/>
+                            <constraint firstAttribute="width" constant="25" id="AsI-kO-D4L"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-1" translatesAutoresizingMaskIntoConstraints="NO" id="5Fh-Kf-zjn" customClass="CircularUIImageView" customModule="Arisan" customModuleProvider="target">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="g2D-Dw-rUR"/>
+                            <constraint firstAttribute="width" constant="25" id="uzH-3a-mrA"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4t-yT-Ib2">
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.52549019607843139" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="u33-HD-J1W"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <state key="normal" title="JOIN">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PsH-cS-IiC">
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.52549019610000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="lIf-9J-OXD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SyN-fF-gc9" firstAttribute="leading" secondItem="g2g-6s-X3D" secondAttribute="trailing" constant="15" id="0N9-pI-hW3"/>
+                    <constraint firstItem="5Fh-Kf-zjn" firstAttribute="top" secondItem="SyN-fF-gc9" secondAttribute="top" id="0kR-ZP-VYP"/>
+                    <constraint firstAttribute="trailing" secondItem="k4t-yT-Ib2" secondAttribute="trailing" id="3m4-Ex-zW2"/>
+                    <constraint firstItem="zGO-3q-tjj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="7Gs-Cp-5HV"/>
+                    <constraint firstItem="hFB-8u-xfn" firstAttribute="leading" secondItem="zGO-3q-tjj" secondAttribute="trailing" constant="8" symbolic="YES" id="9ib-Ja-uOU"/>
+                    <constraint firstItem="g2g-6s-X3D" firstAttribute="top" secondItem="lJL-Kc-zSm" secondAttribute="bottom" constant="3" id="9y7-0Z-I6u"/>
+                    <constraint firstItem="hFB-8u-xfn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-2" id="B3i-io-IAW"/>
+                    <constraint firstItem="PsH-cS-IiC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-7" id="CrE-kZ-Nqm"/>
+                    <constraint firstItem="lJL-Kc-zSm" firstAttribute="top" secondItem="hFB-8u-xfn" secondAttribute="bottom" constant="5" id="DaA-oK-Kzv"/>
+                    <constraint firstItem="PsH-cS-IiC" firstAttribute="centerY" secondItem="lJL-Kc-zSm" secondAttribute="centerY" id="E8l-dM-z8X"/>
+                    <constraint firstItem="SyN-fF-gc9" firstAttribute="top" secondItem="eV9-zU-W0g" secondAttribute="top" id="H1n-gD-es9"/>
+                    <constraint firstItem="zGO-3q-tjj" firstAttribute="leading" secondItem="PsH-cS-IiC" secondAttribute="trailing" constant="6" id="Icf-Z2-tZE"/>
+                    <constraint firstItem="zGO-3q-tjj" firstAttribute="centerY" secondItem="hFB-8u-xfn" secondAttribute="centerY" id="Ogz-2d-xoh"/>
+                    <constraint firstItem="z6z-ap-S8Q" firstAttribute="leading" secondItem="SyN-fF-gc9" secondAttribute="trailing" constant="16" id="Pb6-Qc-kmp"/>
+                    <constraint firstItem="k4t-yT-Ib2" firstAttribute="leading" secondItem="lJL-Kc-zSm" secondAttribute="trailing" constant="2" id="QsG-WY-OMs"/>
+                    <constraint firstItem="eV9-zU-W0g" firstAttribute="top" secondItem="z6z-ap-S8Q" secondAttribute="top" id="Ubs-pV-pcY"/>
+                    <constraint firstItem="k4t-yT-Ib2" firstAttribute="leading" secondItem="eV9-zU-W0g" secondAttribute="trailing" constant="39" id="alm-6c-vw1"/>
+                    <constraint firstItem="5Fh-Kf-zjn" firstAttribute="centerY" secondItem="g2g-6s-X3D" secondAttribute="centerY" id="bvv-Sm-THb"/>
+                    <constraint firstItem="PsH-cS-IiC" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="eIH-2z-0uA"/>
+                    <constraint firstItem="lJL-Kc-zSm" firstAttribute="leading" secondItem="g2g-6s-X3D" secondAttribute="leading" id="edP-Pg-tuy"/>
+                    <constraint firstItem="eV9-zU-W0g" firstAttribute="leading" secondItem="5Fh-Kf-zjn" secondAttribute="trailing" constant="15" id="gvb-lV-ho7"/>
+                    <constraint firstItem="k4t-yT-Ib2" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="iOd-L8-IJi"/>
+                    <constraint firstItem="PsH-cS-IiC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iae-TI-gLy"/>
+                    <constraint firstItem="k4t-yT-Ib2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="koq-cy-l9n"/>
+                    <constraint firstItem="g2g-6s-X3D" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="vsf-eq-rp8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="invitationSubtitle" destination="g2g-6s-X3D" id="ahc-zz-7Eu"/>
+                <outlet property="invitationTitle" destination="lJL-Kc-zSm" id="ddh-UK-JBz"/>
+                <outlet property="inviterAvatar" destination="zGO-3q-tjj" id="H8s-45-thv"/>
+                <outlet property="inviterName" destination="hFB-8u-xfn" id="Ec1-bj-DBc"/>
+                <outlet property="joinButton" destination="k4t-yT-Ib2" id="ndA-lY-XBn"/>
+                <outlet property="memberAvatar1" destination="5Fh-Kf-zjn" id="VHN-NW-PFf"/>
+                <outlet property="memberAvatar2" destination="SyN-fF-gc9" id="uUn-gs-ehu"/>
+                <outlet property="memberAvatar3" destination="eV9-zU-W0g" id="E33-de-7qH"/>
+                <outlet property="memberAvatar4" destination="z6z-ap-S8Q" id="M3r-xg-pC4"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="87"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar-1" width="25" height="25"/>
+        <image name="avatar-2" width="25" height="25"/>
+        <image name="avatar-3" width="25" height="25"/>
+        <image name="avatar-4" width="25" height="25"/>
+    </resources>
+</document>

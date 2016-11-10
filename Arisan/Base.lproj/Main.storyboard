@@ -213,7 +213,7 @@
         <scene sceneID="aum-7C-vzE">
             <objects>
                 <collectionViewController id="ZAb-m0-hrS" customClass="HomeViewController" customModule="Arisan" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="L5g-4j-xsU">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="L5g-4j-xsU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -254,7 +254,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lw-Uv-Kwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2783.1999999999998" y="122.78860569715144"/>
+            <point key="canvasLocation" x="2844" y="123"/>
         </scene>
         <!--Share View Controller-->
         <scene sceneID="aUD-Bb-7J0">
@@ -276,7 +276,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="iev-x6-3JT"/>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://animals.nationalgeographic.com/animals/fish/great-white-shark/" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QJ5-Y2-gvS">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="CmC-P1-gXg"/>
+                                    <constraint firstAttribute="height" constant="30" id="NE6-Bx-r5H"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -285,7 +285,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W6D-TB-epB">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="144" id="J3E-Hr-YPr"/>
+                                    <constraint firstAttribute="height" constant="144" id="0y0-B9-a1m"/>
                                 </constraints>
                                 <string key="text">The legendary great white shark is far more fearsome in our imaginations than in reality. As scientific research on these elusive predators increases, their image as mindless killing machines is beginning to fade.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -293,31 +293,27 @@
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample_share_img" translatesAutoresizingMaskIntoConstraints="NO" id="4Mx-hf-HGZ">
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="fRo-sr-722"/>
-                                    <constraint firstAttribute="height" constant="250" id="sFc-TJ-X4K"/>
-                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4Mx-hf-HGZ" firstAttribute="leading" secondItem="Jny-ND-gFA" secondAttribute="leadingMargin" constant="46" id="3Kg-MU-hVf"/>
-                            <constraint firstItem="wWN-vf-emB" firstAttribute="top" secondItem="Jny-ND-gFA" secondAttribute="top" id="3lz-0m-VoK"/>
-                            <constraint firstItem="QJ5-Y2-gvS" firstAttribute="top" secondItem="Hg4-ac-s4c" secondAttribute="bottom" constant="55" id="Ci7-MO-vex"/>
-                            <constraint firstItem="iev-x6-3JT" firstAttribute="bottom" secondItem="jnQ-L0-0mL" secondAttribute="top" id="Cup-AL-tkv"/>
-                            <constraint firstItem="W6D-TB-epB" firstAttribute="centerX" secondItem="4Mx-hf-HGZ" secondAttribute="centerX" id="Gyx-Vt-Zhp"/>
-                            <constraint firstItem="iev-x6-3JT" firstAttribute="top" secondItem="wWN-vf-emB" secondAttribute="top" id="Mdb-6z-qQv"/>
-                            <constraint firstItem="wWN-vf-emB" firstAttribute="leading" secondItem="iev-x6-3JT" secondAttribute="leading" id="O6a-9D-wpF"/>
-                            <constraint firstItem="4Mx-hf-HGZ" firstAttribute="top" secondItem="W6D-TB-epB" secondAttribute="bottom" constant="42" id="P5R-2H-6pz"/>
-                            <constraint firstItem="QJ5-Y2-gvS" firstAttribute="leading" secondItem="Jny-ND-gFA" secondAttribute="leadingMargin" id="UZY-Eg-zCI"/>
-                            <constraint firstAttribute="trailing" secondItem="wWN-vf-emB" secondAttribute="trailing" id="Wek-Dv-GJU"/>
-                            <constraint firstItem="wWN-vf-emB" firstAttribute="leading" secondItem="Jny-ND-gFA" secondAttribute="leading" id="cT2-LR-GVY"/>
-                            <constraint firstItem="QJ5-Y2-gvS" firstAttribute="leading" secondItem="W6D-TB-epB" secondAttribute="leading" id="cTb-yN-RzX"/>
-                            <constraint firstItem="QJ5-Y2-gvS" firstAttribute="trailing" secondItem="W6D-TB-epB" secondAttribute="trailing" id="l6R-k8-8x7"/>
-                            <constraint firstItem="W6D-TB-epB" firstAttribute="top" secondItem="QJ5-Y2-gvS" secondAttribute="bottom" constant="25" id="ojH-nL-KJZ"/>
-                            <constraint firstItem="wWN-vf-emB" firstAttribute="trailing" secondItem="iev-x6-3JT" secondAttribute="trailing" id="rRd-Ud-a4M"/>
-                            <constraint firstItem="wWN-vf-emB" firstAttribute="centerX" secondItem="QJ5-Y2-gvS" secondAttribute="centerX" id="vKJ-HV-1ef"/>
-                            <constraint firstItem="jnQ-L0-0mL" firstAttribute="top" secondItem="4Mx-hf-HGZ" secondAttribute="bottom" constant="57" id="xGt-Lm-hev"/>
+                            <constraint firstItem="iev-x6-3JT" firstAttribute="bottom" secondItem="jnQ-L0-0mL" secondAttribute="top" id="013-fx-DZq"/>
+                            <constraint firstItem="wWN-vf-emB" firstAttribute="centerX" secondItem="Jny-ND-gFA" secondAttribute="centerX" id="3nZ-7Q-xJC"/>
+                            <constraint firstItem="QJ5-Y2-gvS" firstAttribute="trailing" secondItem="W6D-TB-epB" secondAttribute="trailing" id="5T3-Or-Jug"/>
+                            <constraint firstItem="wWN-vf-emB" firstAttribute="centerX" secondItem="QJ5-Y2-gvS" secondAttribute="centerX" id="850-ER-Mme"/>
+                            <constraint firstItem="QJ5-Y2-gvS" firstAttribute="leading" secondItem="W6D-TB-epB" secondAttribute="leading" id="Dnz-lJ-0gU"/>
+                            <constraint firstItem="W6D-TB-epB" firstAttribute="top" secondItem="QJ5-Y2-gvS" secondAttribute="bottom" constant="25" id="HVI-ST-1fT"/>
+                            <constraint firstItem="wWN-vf-emB" firstAttribute="top" secondItem="iev-x6-3JT" secondAttribute="top" id="M1B-Tq-CzG"/>
+                            <constraint firstItem="4Mx-hf-HGZ" firstAttribute="top" secondItem="W6D-TB-epB" secondAttribute="bottom" constant="42" id="NZs-6d-wxW"/>
+                            <constraint firstItem="jnQ-L0-0mL" firstAttribute="top" secondItem="4Mx-hf-HGZ" secondAttribute="bottom" constant="57" id="Ng6-W3-aKA"/>
+                            <constraint firstItem="QJ5-Y2-gvS" firstAttribute="leading" secondItem="Jny-ND-gFA" secondAttribute="leadingMargin" id="Ohb-cW-cTL"/>
+                            <constraint firstItem="iev-x6-3JT" firstAttribute="trailing" secondItem="wWN-vf-emB" secondAttribute="trailing" id="YEn-0h-lht"/>
+                            <constraint firstItem="QJ5-Y2-gvS" firstAttribute="top" secondItem="Hg4-ac-s4c" secondAttribute="bottom" constant="55" id="gdw-L1-dlV"/>
+                            <constraint firstItem="W6D-TB-epB" firstAttribute="centerX" secondItem="4Mx-hf-HGZ" secondAttribute="centerX" id="i2n-x9-1Uf"/>
+                            <constraint firstItem="wWN-vf-emB" firstAttribute="leading" secondItem="Jny-ND-gFA" secondAttribute="leading" id="mgL-aU-abm"/>
+                            <constraint firstItem="wWN-vf-emB" firstAttribute="top" secondItem="Jny-ND-gFA" secondAttribute="top" id="nU9-PM-Oec"/>
+                            <constraint firstItem="4Mx-hf-HGZ" firstAttribute="leading" secondItem="Jny-ND-gFA" secondAttribute="leadingMargin" constant="46" id="qWF-gz-Byx"/>
+                            <constraint firstItem="wWN-vf-emB" firstAttribute="leading" secondItem="iev-x6-3JT" secondAttribute="leading" id="yxm-gO-o4g"/>
                         </constraints>
                     </view>
                     <connections>
@@ -516,7 +512,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gyh-gC-ekE" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="7JZ-Hb-rKY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7JZ-Hb-rKY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
